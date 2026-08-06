@@ -17,3 +17,12 @@
 
 ! UniFi - crash reporting
 ||crash-report-service.svc.ui.com^
+
+! TCL TV - ad server
+||euads-o.api.leiniao.com^
+
+! TCL TV - Huan, TV audience analytics / content recognition
+||huan.tv^
+
+! TCL TV - new-user registration tracking
+||cedock.com^
