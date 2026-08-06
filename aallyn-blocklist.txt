@@ -26,3 +26,12 @@
 
 ! TCL TV - new-user registration tracking
 ||cedock.com^
+
+! Riot - analytics collector (telemetry.* and ekg.* already covered by public lists)
+||data.riotgames.com^
+
+! Epic - DataRouter telemetry (the .ol. variant is already on public lists, this one is not)
+||datarouter-prod.ak.epicgames.com^
+
+! Logitech G HUB - telemetry pipeline (updates.logitech.com stays open)
+||datapipeline.logitech.io^
