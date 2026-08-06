@@ -35,3 +35,12 @@
 
 ! Logitech G HUB - telemetry pipeline (updates.logitech.com stays open)
 ||datapipeline.logitech.io^
+
+! Google - semantic location inference. Kills Maps Timeline, which is unused.
+||semanticlocation-pa.googleapis.com^
+
+! Samsung - server-driven UI. Revert first if the Galaxy Store misbehaves.
+||sd-ui.samsungapis.com^
+
+! SignalRGB - partner Firebase. Revert first if partner devices stop being detected.
+||signalrgbpartners.firebaseio.com^
