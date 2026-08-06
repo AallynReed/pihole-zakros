@@ -1,49 +1,31 @@
 # pihole-zakros
 
-A small personal Pi-hole blocklist for device telemetry that the big public lists don't cover.
+Custom Pi-hole lists for my network, kept in git so they survive rebuilding the Pi-hole instance.
 
-Everything here was found by watching what my own devices actually query, then checking each domain
-against the public lists I already run (hagezi `tif` / `pro.plus` / `ultimate`, StevenBlack, firebog,
-Perflyst and friends). Only domains those lists *miss* end up here.
+## Policy
 
-## Use it
+Block telemetry and pointless cloud features. **Never** block anything a device needs to work —
+firmware updates, app control, time sync and local function all stay reachable.
 
-Add as an adlist in Pi-hole:
+Domains are found by filtering Pi-hole's query log by device IP, then checked against the public lists
+already in use (hagezi, StevenBlack, firebog, Perflyst) so only genuine gaps end up here.
+
+## Lists
+
+| File | Add to Pi-hole as |
+|---|---|
+| `aallyn-blocklist.txt` | blocklist |
+| `allowlist.txt` | **allowlist** (adlist type 1) |
 
 ```
 https://raw.githubusercontent.com/AallynReed/pihole-zakros/main/aallyn-blocklist.txt
+https://raw.githubusercontent.com/AallynReed/pihole-zakros/main/allowlist.txt
 ```
 
-Then apply:
-
-```bash
-pihole -g
-```
+Apply with `pihole -g`. GitHub's raw CDN caches for 5 minutes, so a push takes that long to appear.
 
 ## Format
 
-Adblock Plus syntax. `||example.com^` blocks `example.com` **and every subdomain** — Pi-hole v6 parses
-this natively, so no regex rules are needed. Lines starting with `!` are comments.
-
-Using ABP syntax rather than Pi-hole regex entries is deliberate: regex rules live only in Pi-hole's
-database and are lost when you rebuild the instance, whereas an adlist is re-fetched automatically.
-
-## What's in it
-
-| Rule | Why |
-|---|---|
-| `\|\|diagnostic.networking.aws.dev^` | Amazon Echo network-diagnostics telemetry — 61 subdomains, ~61% of the device's total DNS traffic |
-| `\|\|ygles.com^` | Canon printer cloud IoT backend |
-
-The file also carries a commented-out section of IoT **control-plane** domains (TP-Link, Sonoff/eWeLink,
-Canon Cloud Link). Those are deliberately disabled: blocking them doesn't stop telemetry, it severs the
-device from its vendor cloud and breaks phone-app control. Uncomment per device if that's what you want.
-
-## Adding to it
-
-1. Find the domain in Pi-hole's query log — filter by the device's IP.
-2. Confirm it isn't already blocked by an existing list.
-3. Confirm it's telemetry, not the device's control plane. If unsure, block it and see what breaks.
-4. Add `||domain^` with a comment explaining what it is and what you verified still works.
-
-Pi-hole refreshes adlists on its own schedule; `pihole -g` applies changes immediately.
+Adblock Plus syntax. `||example.com^` blocks a domain and all subdomains; `@@||example.com^` allows one.
+ABP is used instead of Pi-hole regex rules on purpose — regex entries live only in the Pi-hole database
+and are lost on rebuild, whereas adlists are re-fetched automatically.

@@ -1,0 +1,7 @@
+! github.com/AallynReed/pihole-zakros
+! Device functions wrongly caught by public blocklists.
+! Add as a Pi-hole allowlist (adlist type 1), not a blocklist.
+
+! Amazon device push messaging - blocked by Perflyst AmazonFireTV
+@@||device-messaging-na.amazon.com^
+@@||devicemessaging.us-east-1.amazon.com^

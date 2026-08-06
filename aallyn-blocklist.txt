@@ -1,4 +1,6 @@
 ! github.com/AallynReed/pihole-zakros
+! Telemetry and pointless cloud features only.
+! Never block firmware updates, app control, or anything a device needs to work.
 ! ||domain^ blocks the domain and all subdomains.
 
 ! Amazon Echo - AWS network diagnostics
@@ -7,12 +9,5 @@
 ! Canon - cloud IoT backend
 ||ygles.com^
 
-! Canon - cloud print (keeps LAN printing, kills Cloud Link)
+! Canon - cloud print
 ||pdisp01.c-wss.com^
-
-! Control plane - these break app control, not telemetry
-! ||tplinknbu.com^
-! ||tplinkcloud.com^
-! ||coolkit.cc^
-! ||lifeaiot.com^
-! ||doiting.com^
