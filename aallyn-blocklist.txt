@@ -11,3 +11,9 @@
 
 ! Canon - cloud print
 ||pdisp01.c-wss.com^
+
+! UniFi - device fingerprinting ML (loses device-type labels in the UI, nothing else)
+||fprint-ml-poc.dev.svc.ui.com^
+
+! UniFi - crash reporting
+||crash-report-service.svc.ui.com^
