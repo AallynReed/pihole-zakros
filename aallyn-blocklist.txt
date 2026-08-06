@@ -44,3 +44,12 @@
 
 ! SignalRGB - partner Firebase. Revert first if partner devices stop being detected.
 ||signalrgbpartners.firebaseio.com^
+
+! Windows - IRIS, the lockscreen/Start "suggestions" and Spotlight ad service
+||fd.api.iris.microsoft.com^
+
+! Office - experimentation config service
+||ecs.office.com^
+
+! Edge - experimentation config service (skype name is historical)
+||config.edge.skype.com^
