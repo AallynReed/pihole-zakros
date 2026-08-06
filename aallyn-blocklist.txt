@@ -1,0 +1,18 @@
+! github.com/AallynReed/pihole-zakros
+! ||domain^ blocks the domain and all subdomains.
+
+! Amazon Echo - AWS network diagnostics
+||diagnostic.networking.aws.dev^
+
+! Canon - cloud IoT backend
+||ygles.com^
+
+! Canon - cloud print (keeps LAN printing, kills Cloud Link)
+||pdisp01.c-wss.com^
+
+! Control plane - these break app control, not telemetry
+! ||tplinknbu.com^
+! ||tplinkcloud.com^
+! ||coolkit.cc^
+! ||lifeaiot.com^
+! ||doiting.com^
