@@ -57,3 +57,27 @@
 
 ! Edge - experimentation config service (skype name is historical)
 ||config.edge.skype.com^
+
+! Xiaomi phones - health/diagnostics telemetry (all regions)
+||hlth.io.mi.com^
+
+! GiveFreely browser extension - event tracking
+||events.givefreely.com^
+
+! Adobe - Acrobat usage metering and Adobe Analytics tag manager
+||dc-meteriq.adobe.io^
+||adobedtm.com^
+
+! Dead by Daylight - gameplay log upload
+||gamelogs.live.bhvrdbd.com^
+
+! Supercell - marketing reports
+||report.mkt.supercell.com^
+
+! AWS web console - telemetry and analytics
+||telemetry.console.api.aws^
+||analytics.console.aws.a2z.com^
+
+! Website trackers - UserReport audience analytics, Ludimusic events
+||userreport.com^
+||events.ludimusic.com^
