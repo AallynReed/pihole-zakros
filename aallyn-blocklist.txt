@@ -27,6 +27,10 @@
 ! TCL TV - new-user registration tracking
 ||cedock.com^
 
+! TCL TV - device data collection and telemetry
+||on-hweudc-o.api.leiniao.com^
+||hwtpc-o.api.leiniao.com^
+
 ! Riot - analytics collector (telemetry.* and ekg.* already covered by public lists)
 ||data.riotgames.com^
 
