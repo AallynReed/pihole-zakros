@@ -81,3 +81,56 @@
 ! Website trackers - UserReport audience analytics, Ludimusic events
 ||userreport.com^
 ||events.ludimusic.com^
+
+! EA app - River and PIN (player insights) telemetry
+||river.data.ea.com^
+||pin-river.data.ea.com^
+||freeform-river.data.ea.com^
+||pin-em.data.ea.com^
+
+! Canon - printer software promotions
+||promo.c-ij.com^
+
+! Intel - driver/app telemetry and usage reporting
+||telemetry.intel.com^
+||system-usage-report.intel.com^
+
+! Kindle app - performance telemetry
+||kindle-perf.com^
+
+! AWS website - sales chat widget
+||mrc-sunrise.marketing.aws.dev^
+
+! AWS Builder ID - usage insights
+||insights.builderprofile.aws.dev^
+
+! Supercell - marketing SDK init. Revert first if a Supercell game misbehaves.
+||init.mkt.supercell.com^
+
+! Salesforce Evergage - app personalisation tracking (Santander, De'Longhi)
+||evergage.com^
+
+! AccuWeather app - event pipeline
+||vortex.accuweather.com^
+
+! Samsung - promo feed
+||api-promo.samsungknowledge.com^
+
+! Website and app trackers - ads pixels, analytics, marketing automation, surveys
+||alb.reddit.com^
+||smartplugin.youbora.com^
+||pluto.smallpdf.com^
+||prism.app-us1.com^
+||tagging.unobike.com^
+||in-automate.brevo.com^
+||adzerk.net^
+||collect.commander1.com^
+||webcontent-activity.listrak.com^
+||i-eu.ci360.marketing^
+||metrics.buymeacoffee.com^
+||survey-prd.survicate-cdn.com^
+||prebid-eu.adipolo.live^
+||handm-mkt-prod1-nlb.campaign.adobe.com^
+||leroymerlinpt.pixel.optimeeze.data.adeo.cloud^
+||collect-sa.lp.closum.com^
+||api.campaigns.notino.com^
