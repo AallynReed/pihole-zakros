@@ -64,12 +64,14 @@
 ! GiveFreely browser extension - event tracking
 ||events.givefreely.com^
 
-! Adobe - Acrobat usage metering and Adobe Analytics tag manager
+! Adobe - Acrobat usage metering, in-app marketing personalisation, Adobe Analytics tag manager
 ||dc-meteriq.adobe.io^
+||p13n.adobe.io^
 ||adobedtm.com^
 
-! Dead by Daylight - gameplay log upload
+! Dead by Daylight - gameplay log upload (live and PTB)
 ||gamelogs.live.bhvrdbd.com^
+||gamelogs.ptb.bhvrdbd.com^
 
 ! Supercell - marketing reports
 ||report.mkt.supercell.com^
@@ -128,9 +130,34 @@
 ||webcontent-activity.listrak.com^
 ||i-eu.ci360.marketing^
 ||metrics.buymeacoffee.com^
-||survey-prd.survicate-cdn.com^
+||survicate-cdn.com^
 ||prebid-eu.adipolo.live^
 ||handm-mkt-prod1-nlb.campaign.adobe.com^
 ||leroymerlinpt.pixel.optimeeze.data.adeo.cloud^
 ||collect-sa.lp.closum.com^
 ||api.campaigns.notino.com^
+||pem-teads.tv^
+||pixel.biano.pt^
+
+! Claude - analytics and device-fingerprint beacon. Revert s-cdn first if claude.ai login adds captchas.
+||a.claude.ai^
+||s-cdn.anthropic.com^
+
+! Intercom - support chat widget and its tracking (claude.ai and other sites)
+||api-iam.intercom.io^
+||widget.intercom.io^
+||js.intercomcdn.com^
+
+! Phone app SDKs - Umlaut crowd network/location measurement, DNS resolver probes
+||crowd-umlaut.com^
+||internet-measurement.com^
+
+! Lidl Plus - in-app surveys
+||surveys.lidlplus.com^
+
+! Firefox - Normandy studies and experiments
+||normandy.cdn.mozilla.net^
+
+! Chrome/Brave - CSP violation reports and autofill crowdsourcing (local autofill unaffected)
+||csp.withgoogle.com^
+||content-autofill.googleapis.com^
