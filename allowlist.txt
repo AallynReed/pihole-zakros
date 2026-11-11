@@ -5,3 +5,6 @@
 ! Amazon device push messaging - blocked by Perflyst AmazonFireTV
 @@||device-messaging-na.amazon.com^
 @@||devicemessaging.us-east-1.amazon.com^
+
+! Alpaca brokerage - hagezi spam-tlds blocks the whole .markets TLD
+@@||alpaca.markets^
