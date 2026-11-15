@@ -1,9 +1,22 @@
-<p align="center"><img src="docs/icon.svg" width="128" alt="pihole-zakros icon"></p>
+<div align="center">
+
+<img src="docs/icon.svg" width="128" alt="pihole-zakros icon">
 
 # pihole-zakros
 
-[![Discord](https://img.shields.io/badge/Discord-Foxhearth-5865F2?logo=discord&logoColor=white)](https://foxhearth.com/discord)
-[![foxhearth.com](https://img.shields.io/badge/foxhearth.com-project_page-e8702a)](https://foxhearth.com/projects/pihole-zakros)
+<!-- Project status -->
+![GitHub Repo stars](https://img.shields.io/github/stars/AallynReed/pihole-zakros?style=for-the-badge&color=gold&cacheSeconds=21600)
+![GitHub last commit](https://img.shields.io/github/last-commit/AallynReed/pihole-zakros?style=for-the-badge&color=green&cacheSeconds=21600)
+![GitHub issues](https://img.shields.io/github/issues/AallynReed/pihole-zakros?style=for-the-badge&cacheSeconds=21600)
+
+<!-- Platforms -->
+![Pi-hole](https://img.shields.io/badge/Pi--hole-96060C?style=for-the-badge&logo=pihole&logoColor=white)
+
+<!-- Project meta -->
+[![Discord](https://img.shields.io/badge/Discord-Foxhearth-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://foxhearth.com/discord)
+[![foxhearth.com](https://img.shields.io/badge/foxhearth.com-project_page-E8702A?style=for-the-badge)](https://foxhearth.com/projects/pihole-zakros)
+
+</div>
 
 Custom Pi-hole lists for my network, kept in git so they survive rebuilding the Pi-hole instance.
 
