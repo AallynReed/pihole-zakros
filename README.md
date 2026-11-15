@@ -1,4 +1,9 @@
+<p align="center"><img src="docs/icon.svg" width="128" alt="pihole-zakros icon"></p>
+
 # pihole-zakros
+
+[![Discord](https://img.shields.io/badge/Discord-Foxhearth-5865F2?logo=discord&logoColor=white)](https://foxhearth.com/discord)
+[![foxhearth.com](https://img.shields.io/badge/foxhearth.com-project_page-e8702a)](https://foxhearth.com/projects/pihole-zakros)
 
 Custom Pi-hole lists for my network, kept in git so they survive rebuilding the Pi-hole instance.
 
